@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlossomGifts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BlossomGifts</h1>
+        <nav>
+            <ul id="categories">
+                <li>Flowers</li>
+                <li>Gift Baskets</li>
+                <li>Personalized Gifts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="subcategories">
+            <h2>Subcategories</h2>
+            <ul id="subcat-list"></ul>
+        </section>
+
+        <section id="admin-panel">
+            <h2>Admin Panel</h2>
+            <div>
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name">
+            </div>
+            <div>
+                <label for="item-price">Price:</label>
+                <input type="number" id="item-price">
+            </div>
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+            <button onclick="viewCustomers()">View Customers</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlossomGifts. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff7f7f;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    cursor: pointer;
+    background: #ffb3b3;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#admin-panel {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff7f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67373;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff7f7f;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    cursor: pointer;
+    background: #ffb3b3;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#admin-panel {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff7f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67373;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff7f7f;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    cursor: pointer;
+    background: #ffb3b3;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+#admin-panel {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff7f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67373;
+}
