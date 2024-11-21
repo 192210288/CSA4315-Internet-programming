@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Infotech</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Ram Infotech</h1>
+        <nav>
+            <ul>
+                <li><a href="#online-store">Online Store</a></li>
+                <li><a href="#service-center">Service Center</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Admin Login Section -->
+    <section id="admin-login">
+        <h2>Admin Login</h2>
+        <form action="admin_dashboard.php" method="post">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="username" required>
+            
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Online Store Section -->
+    <section id="online-store">
+        <h2>Online Store</h2>
+        <div class="laptop">
+            <h3>Laptop Model A</h3>
+            <p><strong>Configuration:</strong> Intel i7, 16GB RAM, 512GB SSD</p>
+            <p><strong>Price:</strong> $999.99</p>
+            <p><strong>Reviews:</strong> 4.5/5 based on 200 reviews</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="laptop">
+            <h3>Laptop Model B</h3>
+            <p><strong>Configuration:</strong> Intel i5, 8GB RAM, 256GB SSD</p>
+            <p><strong>Price:</strong> $799.99</p>
+            <p><strong>Reviews:</strong> 4.2/5 based on 150 reviews</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Service Center Section -->
+    <section id="service-center">
+        <h2>Service Center</h2>
+        <form action="schedule_repair.php" method="post">
+            <label for="repair-laptop-id">Laptop ID:</label>
+            <input type="text" id="repair-laptop-id" name="laptop_id" required>
+            
+            <label for="repair-type">Service Type:</label>
+            <select id="repair-type" name="service_type">
+                <option value="screen">Screen Replacement</option>
+                <option value="battery">Battery Replacement</option>
+                <option value="keyboard">Keyboard Repair</option>
+                <option value="general">General Service</option>
+            </select>
+            
+            <label for="repair-date">Preferred Repair Date:</label>
+            <input type="date" id="repair-date" name="repair_date" required>
+            
+            <button type="submit">Schedule Repair</button>
+        </form>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Ram Infotech has been providing top-notch laptop sales and service solutions since its inception. We aim to deliver high-quality products and excellent customer service to ensure the satisfaction of all our customers.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_contact.php" method="post">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="name" required>
+            
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" name="email" required>
+            
+            <label for="customer-message">Message:</label>
+            <textarea id="customer-message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>How can I purchase a laptop?</strong> - Simply browse our online store and choose the laptop you want to purchase.</li>
+            <li><strong>How do I schedule a service?</strong> - Visit the Service Center section to schedule a repair or maintenance service.</li>
+            <li><strong>What is the warranty on laptops?</strong> - All laptops come with a one-year warranty covering defects in manufacturing.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ram Infotech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
